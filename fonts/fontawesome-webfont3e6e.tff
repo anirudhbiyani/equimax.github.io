@@ -1,0 +1,1099 @@
+<html>
+
+<head>
+<meta charset='utf-8'/>
+<meta content='text/php; charset=UTF-8' http-equiv='Content-Type'/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProBuds Strategy |  </title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400">
+<link rel="stylesheet" href="http://www.probuds.co/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="http://www.probuds.co/css/font-awesome.min.css" type="text/css" />
+
+<link rel="stylesheet" href="http://www.probuds.co/css/style.css" type="text/css" />
+<style>
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden
+    }
+
+    .clearfix {
+        *+height: 1%;
+    }
+
+    .container-slider {
+        height:auto;
+        margin:0px auto;
+    }
+    .container-slider ul {margin:0!important;left:0px !important;top:58px !important;}
+
+    .container-slider ul li {
+        /* transition: width .5s, height .5s, top .5s, left .5s;
+            -webkit-transition: width .5s, height .5s, top .5s, left .5s;
+            */
+            border:1px solid #fff;
+    }
+
+    .container-slider ul li img {border:2px solid #f5f5f5;}
+</style>
+
+<script src="http://www.probuds.co/js/jquery-3.2.1.min.js"></script>
+<script src="http://www.probuds.co/js/bootstrap.min.js"></script>
+<script src="http://www.probuds.co/js/bootstrap-submenu.js"></script>
+<script src="http://www.probuds.co/js/custom.js"></script>
+<script src="http://www.probuds.co/js/Carousel.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('.container-slider').carousel({
+        num: 5,
+        maxWidth: 300,
+        maxHeight: 250,
+        distance: 30,
+        scale: 0.6,
+        animationTime: 1000,
+        showTime: 4000
+    });
+});
+</script>
+
+</head>
+
+
+
+
+
+
+
+<style>
+
+.dropdown-menu > li.kopie > a {
+    padding-left:5px;
+}
+
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+   top:0;left:100%;
+   margin-top:-6px;margin-left:-1px;
+   -webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;
+ }
+
+.dropdown-submenu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;
+  height: 0;
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color:#555;
+ }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu>li>a {
+
+    text-decoration: none !important;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav  {
+     display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: red;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-top: 2px;
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #333;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     background-color: #ccc;
+	 color:#fff;
+   }
+
+   .navbar-nav .open .dropdown-menu {
+     border-bottom: 1px solid white;
+     border-radius: 0;
+   }
+  .dropdown-menu {
+      padding-left: 0px;
+  }
+  .dropdown-menu .dropdown-menu {
+      padding-left: 0px;
+   }
+   .dropdown-menu .dropdown-menu .dropdown-menu {
+      padding-left: 30px;
+   }
+   li.dropdown.open {
+    border: 0px solid red;
+   }
+
+}
+
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  #navbar {
+    text-align: center;
+  }
+}
+
+</style>
+<!-- Ajad Search Form Code!-->
+  <script src="http://www.probuds.co/js/typeahead.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('input.typeahead').typeahead({
+        name: 'typeahead',
+        remote:'search.php?key=%QUERY',
+        limit : 10
+    });
+});
+    </script>
+    <style type="text/css">
+.bs-example{
+	font-family: sans-serif;
+	position: relative;
+	margin: 50px;
+}
+.typeahead, .tt-query, .tt-hint {
+	
+	
+	
+	outline: medium none;
+	
+	width: 250px;
+}
+.typeahead {
+	
+}
+.typeahead:focus {
+	border: 2px solid #0097CF;
+}
+.tt-query {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+	color: #999999;
+}
+.tt-dropdown-menu {
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 12px;
+	padding: 8px 0;
+	width: 422px;
+}
+.tt-suggestion {
+	font-size: 24px;
+	line-height: 24px;
+	padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+	background-color: #0097CF;
+	color: #FFFFFF;
+}
+.tt-suggestion p {
+	margin: 0;
+}
+</style>
+
+<!-- End theh code !-->
+<body>
+<hrader>
+<nav class="navbar navbar-default" role="navigation">
+
+
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-md-12">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+
+            <a class="navbar-brand" href="http://www.probuds.co/"><img src="http://www.probuds.co/img/logo.png" class="img-responsive" /></a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+        <ul class="nav navbar-nav navbar-right">
+
+                <li >
+			<div class="navbar-form" style="margin-bottom:0px; margin-top:10px;">
+                <div class="input-group">
+                <form  class="form-horizontal" action="searchh" method="get">
+                <input type="text" name="q" class="typeahead tt-query" autocomplete="off" spellcheck="false" placeholder="Type your Query">
+                    <!--<input type="text"  class="form-control" id="search_filter" placeholder="Search" name="q" >!-->
+                    <div class="input-group-btn">
+                        <input class="btn btn-default"  type="submit" onClick="return SearchFilter();" value="search" style="padding:5px;"><i class="glyphicon glyphicon-search"></i>
+                        </form>
+                    </div>
+                </div>
+            </div>
+				
+			<div class="request-btn"><a href="http://www.probuds.co/request-demo">Request Demo </a></div>
+			</li>
+			</li>
+            </ul>
+            <ul class="nav navbar-nav">
+
+              			  
+			  
+			                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" data-submenu="" class="dropdown-toggle">About Us <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					                    <ul class="dropdown-menu">
+                                         			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/CompanyProfile/About Us " class="dropdown-toggle">About Us</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/ExecutiveTeam/About Us " class="dropdown-toggle">Executive Team</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/AssociatePartners/About Us " class="dropdown-toggle">Associate Partners</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/contactUs/About Us " class="dropdown-toggle">Contact Us</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              											  
+						                    </ul>
+					                </li>
+                                    
+                                    			  
+			  
+			                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" data-submenu="" class="dropdown-toggle">Compliance & Risk Management <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					                    <ul class="dropdown-menu">
+                                         			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/ComplianceSolutio/Compliance & Risk Management " class="dropdown-toggle">Compliance and Risk Management Solution</a>
+                                          
+                                          
+                                          													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/6/Compliance & Risk Management">eCompliance</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/7/Compliance & Risk Management">Legal Diary</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/8/Compliance & Risk Management">e-Compliance SmartTab</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/9/Compliance & Risk Management">Document Management</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/10/Compliance & Risk Management">Event Based Compliances</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/11/Compliance & Risk Management">Phase Based Compliances</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/6/Compliance & Risk Management">eCompliance</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/7/Compliance & Risk Management">Legal Diary</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/8/Compliance & Risk Management">e-Compliance SmartTab</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/9/Compliance & Risk Management">Document Management</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/10/Compliance & Risk Management">Event Based Compliances</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/11/Compliance & Risk Management">Phase Based Compliances</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/6/Compliance & Risk Management">eCompliance</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/7/Compliance & Risk Management">Legal Diary</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/8/Compliance & Risk Management">e-Compliance SmartTab</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/9/Compliance & Risk Management">Document Management</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/10/Compliance & Risk Management">Event Based Compliances</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/11/Compliance & Risk Management">Phase Based Compliances</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/6/Compliance & Risk Management">eCompliance</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/7/Compliance & Risk Management">Legal Diary</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/8/Compliance & Risk Management">e-Compliance SmartTab</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/9/Compliance & Risk Management">Document Management</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/10/Compliance & Risk Management">Event Based Compliances</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/11/Compliance & Risk Management">Phase Based Compliances</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/6/Compliance & Risk Management">eCompliance</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/7/Compliance & Risk Management">Legal Diary</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/8/Compliance & Risk Management">e-Compliance SmartTab</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/9/Compliance & Risk Management">Document Management</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/10/Compliance & Risk Management">Event Based Compliances</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/11/Compliance & Risk Management">Phase Based Compliances</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/6/Compliance & Risk Management">eCompliance</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/7/Compliance & Risk Management">Legal Diary</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/8/Compliance & Risk Management">e-Compliance SmartTab</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/9/Compliance & Risk Management">Document Management</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/10/Compliance & Risk Management">Event Based Compliances</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/11/Compliance & Risk Management">Phase Based Compliances</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 
+						
+					  </li>
+											  
+											  
+											  
+                                              			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/ValueAddServices/Compliance & Risk Management " class="dropdown-toggle">Value Add Services</a>
+                                          
+                                          
+                                          													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/12/Compliance & Risk Management">Legal Research</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/13/Compliance & Risk Management">Legal Walkthrough</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/14/Compliance & Risk Management">Legal Updates/ AMC</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/15/Compliance & Risk Management">Data Migration Services</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/16/Compliance & Risk Management">Risk Register/ Risk Matrix</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/17/Compliance & Risk Management">Due Diligence</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/18/Compliance & Risk Management">Report Monitoring</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/12/Compliance & Risk Management">Legal Research</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/13/Compliance & Risk Management">Legal Walkthrough</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/14/Compliance & Risk Management">Legal Updates/ AMC</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/15/Compliance & Risk Management">Data Migration Services</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/16/Compliance & Risk Management">Risk Register/ Risk Matrix</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/17/Compliance & Risk Management">Due Diligence</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/18/Compliance & Risk Management">Report Monitoring</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/12/Compliance & Risk Management">Legal Research</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/13/Compliance & Risk Management">Legal Walkthrough</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/14/Compliance & Risk Management">Legal Updates/ AMC</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/15/Compliance & Risk Management">Data Migration Services</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/16/Compliance & Risk Management">Risk Register/ Risk Matrix</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/17/Compliance & Risk Management">Due Diligence</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/18/Compliance & Risk Management">Report Monitoring</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/12/Compliance & Risk Management">Legal Research</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/13/Compliance & Risk Management">Legal Walkthrough</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/14/Compliance & Risk Management">Legal Updates/ AMC</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/15/Compliance & Risk Management">Data Migration Services</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/16/Compliance & Risk Management">Risk Register/ Risk Matrix</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/17/Compliance & Risk Management">Due Diligence</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/18/Compliance & Risk Management">Report Monitoring</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/12/Compliance & Risk Management">Legal Research</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/13/Compliance & Risk Management">Legal Walkthrough</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/14/Compliance & Risk Management">Legal Updates/ AMC</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/15/Compliance & Risk Management">Data Migration Services</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/16/Compliance & Risk Management">Risk Register/ Risk Matrix</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/17/Compliance & Risk Management">Due Diligence</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/18/Compliance & Risk Management">Report Monitoring</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/12/Compliance & Risk Management">Legal Research</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/13/Compliance & Risk Management">Legal Walkthrough</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/14/Compliance & Risk Management">Legal Updates/ AMC</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/15/Compliance & Risk Management">Data Migration Services</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/16/Compliance & Risk Management">Risk Register/ Risk Matrix</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/17/Compliance & Risk Management">Due Diligence</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/18/Compliance & Risk Management">Report Monitoring</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 													 
+					  						<ul class="dropdown-menu">
+                                             					                        <li><a href="http://www.probuds.co/Compliance/12/Compliance & Risk Management">Legal Research</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/13/Compliance & Risk Management">Legal Walkthrough</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/14/Compliance & Risk Management">Legal Updates/ AMC</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/15/Compliance & Risk Management">Data Migration Services</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/16/Compliance & Risk Management">Risk Register/ Risk Matrix</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/17/Compliance & Risk Management">Due Diligence</a></li>
+                                            					                        <li><a href="http://www.probuds.co/Compliance/18/Compliance & Risk Management">Report Monitoring</a></li>
+                                            					                        
+					                             </ul>
+                                                 
+                                                 
+						
+					  </li>
+											  
+											  
+											  
+                                              											  
+						                    </ul>
+					                </li>
+                                    
+                                    			  
+			  
+			                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" data-submenu="" class="dropdown-toggle">Consulting <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					                    <ul class="dropdown-menu">
+                                         			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/BusinessProcessImprovements/Consulting " class="dropdown-toggle">Business Process Improvements</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/StartUpManagement/Consulting " class="dropdown-toggle">StartUp Management</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/InternalFinancialReporting/Consulting " class="dropdown-toggle">Internal Financial Reporting</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/BusinessIntelligentSolutions/Consulting " class="dropdown-toggle">Business Intelligent Solutions</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/CFOVirtualServices/Consulting " class="dropdown-toggle">CFO Virtual Services</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/BackOfficeManagement/Consulting " class="dropdown-toggle">Back Office Management</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              			  
+                                        
+										  <li class="dropdown-submenu">
+                                          
+                                          <a href="http://www.probuds.co/services/FixedAssetManagement/Consulting " class="dropdown-toggle">Fixed Asset Management</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              											  
+						                    </ul>
+					                </li>
+                                    
+                                    
+			                
+
+			              
+                          
+<li class="dropdown">
+                    <a href="#" data-toggle="dropdown" data-submenu="" class="dropdown-toggle">Case Studies <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					                    <ul class="dropdown-menu">
+                                         			  
+                                        
+										  <li class="">
+                                          
+                                          <a href="http://www.probuds.co/services/complianceManagementSolution/CaseStudies">Compliance Management Solution</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              			  
+                                        
+										  <li class="">
+                                          
+                                          <a href="http://www.probuds.co/view_more" class="dropdown-toggle">view More</a>
+                                          
+                                          
+                                          
+						
+					  </li>
+											  
+											  
+											  
+                                              											  
+						                    </ul>
+					                </li>
+                            
+
+			
+
+				
+				<li><a href="http://www.probuds.co/client-profile">Client Profile</a></li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
+    </div>
+    </div>
+    </div>
+</nav>  
+
+
+
+</header>
+
+<div class="banner">
+<img src="http://www.probuds.co/img/banner.jpg" class="img-responsive">
+
+<div class="hedingb">
+<h1> WELCOME TO PROBUDS </h1>
+
+<a href="http://www.probuds.co/services/CompanyProfile/About%20Us" class="learn_btn">LEARN MORE </a>
+</div>
+</div>
+
+
+<section id="services">
+
+<div class="container-fluid">
+
+<div class="row">
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+
+<h1> WHAT WE DO </h1>
+
+</div>
+
+
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<a href="http://www.probuds.co/services/ComplianceSolutio/Compliance%20&%20Risk%20Management">
+<div class="box">
+<div class="circle"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
+
+<h3><strong><span style="font-size:16px"><span style="color:rgb(34, 34, 34)">Compliance &amp;&nbsp;Risk Management</span></span></strong></h3>
+
+
+<p>Indian legislations are very dynamic, and compliance owners fear risks of being penalized, imprisonments...</p>
+</div>
+</a>
+</div>
+
+
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<a href="http://www.probuds.co/services/BusinessProcessImprovements/Consulting">
+<div class="box">
+<div class="circle"><i class="fa fa-university" aria-hidden="true"></i></div>
+<h3><strong><span style="font-size:16px"><span style="color:rgb(34, 34, 34)">Consulting</span></span></strong></h3>
+
+
+<p><span style="font-size:14px">The core of our Consulting deals with providing solutions to the business problems, and building customized intelligent...</span></p>
+</div>
+</a>
+</div>
+
+
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<a href="http://www.probuds.co/services/complianceManagementSolution/CaseStudies">
+<div class="box">
+<div class="circle"><i class="fa fa-check" aria-hidden="true"></i></div>
+
+<h3><strong><span style="font-size:16px"><span style="color:rgb(34, 34, 34)">Case Studies</span></span></strong></h3>
+
+
+
+<p>Success of our endevours lies in the problem solving skills and our Case Studies stand to the testimony...</p>
+</div>
+</a>
+</div>
+
+
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<a href="http://www.probuds.co/client-profile">
+<div class="box">
+<div class="circle"><i class="fa fa-align-justify" aria-hidden="true"></i></div>
+<h3><strong>Client Profile</strong></h3>
+
+<p><span style="font-size:14px">Our multi-disciplinary Client engagements helps us cross-pollinate industry experiences as well as enhancing our skills...</span></p>
+
+</div>
+</a>
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="aboutus">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+<h1>ABOUT US</h1>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<p><img class="img-responsive" src="http://www.probuds.co/img/aboutus.jpg" /></p>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="about_content">
+
+<h3><em>&ldquo;IF YOU CHANGE THE WAY YOU LOOK AT THINGS, THE THINGS YOU LOOK AT, WILL CHANGE&rdquo;</em></h3>
+
+<p>Genesis of ProBuds evolved from a belief, that every business process can be improved, through astute mix of cutting edge technology and contemporary wisdom.</p>
+
+<p>ProBuds strives to be a leading solution provider of competent Business Intelligent Solutions, and a thought leader on Strategy Consulting.</p>
+
+<p>The founders, Jasmeet Singh and Shubh Kirti, have worked together for past 16 years in various roles in management consulting and corporate finance. ProBuds Strategy Consulting was conceptualised In October 2016, as culmination of their association as &#39;<em>Professional Buddies</em>&rsquo;.</p>
+
+<p>Since then, ProBuds team has demonstrated quality delivery to major corporates and emerged as most preferred partner for their consulting endeavours.</p>
+
+<p>The key attributes that define ProBuds are, <strong><em>Integrity, Ethical, Professional, Resolute</em></strong>.</p>
+
+<p>Through its strategic associations with leading legal, financial, and technology partners, ProBuds have ensured their service standards are at par with global benchmark....</p>
+ 
+<br>
+<p><a class="learn_btn" href="http://www.probuds.co/services/CompanyProfile/About%20Us" style="margin-bottom: 28px;margin-top: 17px;display: inline-block;">READ MORE </a></p>
+
+</section>
+
+
+<section id="risk-mng">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+<h1>COMPLIANCE &amp; RISK MANAGEMENT&nbsp;</h1>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">&nbsp;
+<div class="about_content">&nbsp;
+<h3 style="text-align:right"><span style="color:#A52A2A"><em><span style="font-family:georgia,serif">&quot;RISK MANAGEMENT PROCESS IS BOTH, TOP-DOWN AND BOTTOM-UP&quot;</span></em></span></h3>
+
+<p>Section 134(5)(f) of Indian Companies Act, 2013 requires the Board, through Director Responsibility Statement, to ensure that the Company has devised proper systems ensuring compliance with provisions of all applicable laws, and that such systems are adequate and operating effectively</p>
+
+<p>Further, Section 204 mandates the Board to offer explanation to each non-compliance and report it in its Directors Report (Sec 134(3)) of Indian Companies Act, 2013</p>
+
+<p>As per Sec 204 of Indian Companies Act 2013, the Practicing Company Secretary has to report, through Secretarial Audit, to the Board about the status of compliance&#39;s of not only the Companies Act, but also of all other Acts under different legislations, applicable to the Company.</p>
+
+<p>Consequence of non-compliance is a penalty of Rs. 1 Lac to Rs. 5 Lac per person involved, and/ or imprisonment...</p>
+<br />
+<br />
+<a class="learn_btn" href="http://www.probuds.co/services/ComplianceSolutio/Compliance%20&%20Risk%20Management">READ MORE </a></div>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><br />
+<img class="img-responsive" src="http://www.probuds.co/img/risk-manage.jpg" /></div>
+</div>
+</div>
+
+</section>
+
+
+<section id="aboutus">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+<h1>CONSULTING&nbsp;</h1>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><br />
+<img class="img-responsive" src="http://www.probuds.co/img/consulting.jpg" /></div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="about_content">
+<h3 style="text-align:right"><em><span style="color:#4B0082"><span style="font-family:georgia,serif">&quot;QUALITY IN A SERVICE OR PRODUCT IS NOT WHAT YOU PUT INTO IT,&nbsp;IT IS WHAT THE CUSTOMER&nbsp;GETS OUT OF IT...&quot;</span></span></em>&nbsp;</h3>
+
+<p>Our concept of providing &#39;One-Stop-Shop&#39; business solutions puts us in advantage, as all services are provided by a team of Experts. One of the important elements while assessing any business issue is that, our process undoubtedly includes evaluation of areas covering Risk and Internal Controls.</p>
+
+<p>Like, through our Startup Management process, we have been playing a pivotal role in strealining the management process, by laying down internal controls, building administrative backbone, and ensuring quality and business discipline persists even when their team stays&nbsp;lean. This practice has led the Startups, to leap forward forthcoming rounds of investment, with document control and compliant with required legislations.&nbsp; &nbsp;</p>
+<br />
+<br />
+<a class="learn_btn" href="http://www.probuds.co/services/BusinessProcessImprovements/Consulting">READ MORE </a></div>
+</div>
+</div>
+</div>
+
+
+</section>
+
+
+<section id="testimonial">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+
+<h1> TESTIMONIALS </h1>
+
+</div>
+
+<div class="col-md-offset-3 col-md-6">
+
+<div class="circle"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+
+</div>
+
+    <div class="col-md-offset-2 col-md-8 test_box">
+
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+
+        <!-- Bottom Carousel Indicators -->
+
+        <ol class="carousel-indicators">
+                  <li data-target="#quote-carousel" data-slide-to="1" class="active"></li>
+
+                    <li data-target="#quote-carousel" data-slide-to="2" class=""></li>
+
+                    <li data-target="#quote-carousel" data-slide-to="3" class=""></li>
+
+                    <li data-target="#quote-carousel" data-slide-to="4" class=""></li>
+
+                    <li data-target="#quote-carousel" data-slide-to="5" class=""></li>
+
+                  </ol>
+
+        
+
+        <!-- Carousel Slides / Quotes -->
+
+        <div class="carousel-inner">
+
+        
+        <!-- Quote 1 -->
+                  <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p> <p>As the Compliance Officer of the Company, I was always inclined to, and in search of automation in the compliance and monitoring systems with best and efficient controls. ProBuds with their &#39;eCompliance Suite&#39; really understood our requirement and implemented the Ecosystem very diligently and in less than 4 months all across India. eCompliance is a very simple and yet effective compliance monitoring solution I&rsquo;ve actually come across. ProBuds capability of customizing their Ecosystem to suit our intricate requirements is unparalleled. I wish the best for ProBuds, and highly recommend their eCompliance Suite for effective Corporate Governance</p>
+</p>
+                  <h3>Mr. Ilam C Kamboj - Former Asso. Vice President - Legal & Company Secretary</h3>
+                  <h5>Hero MotoCorp Ltd</h5>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+
+          <div class="item ">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p> <p>I &amp;nbsp;would personally like to thank ProBuds team on excellent work done and support which is maintained regularly to eCompliance tool. Their comprehensive mapping of the laws has given me a great strength to my attention as Compliance Officer, to monitor the compliances, instantly without waiting for monthly reports.....Thanks once again to entire team for their support</p>
+</p>
+                  <h3>Mr. K N Vijaya Bhaskar- Company Secretary & Senior Manager - Legal</h3>
+                  <h5>Sakra World Hospital</h5>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+
+          <div class="item ">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p> <p>We had decided to&nbsp; implement ProBuds Compliance Ecosystem at the start of our commercial operations. That helped us to create an environment where compliance is not feared but complemented in day to day business. We have reported the compliance status &lsquo;live&rsquo; to our Board and they feel ecstatic to the level of transparency and control over governance we have. ProBuds Document Management has played a pivotal role in archiving our critical documents and maintain a unified accessibility control. Our best wishes to Team ProBuds and their future endeavours</p>
+</p>
+                  <h3>Arjun Dewan - CFO</h3>
+                  <h5>HMC MM Auto Ltd</h5>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+
+          <div class="item ">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p> <p>ProBuds, with their web-based Litigation Management Solution, &lsquo;Legal Diary&rsquo;, gave us the absolute match that we were looking to enhance the digitisation of case management in our company. They even customised their product to suit our centralised business process flow which helped the incumbents across India, take charge of this solution from Day 1. Its a highly recommendable product and the Team ProBuds, with their quality of service and perseverance, implemented this solution within timelines provided. I wish them all the success they need</p>
+</p>
+                  <h3>Mr. Praisy Chanana - Team Manager -Legal & Secretarial</h3>
+                  <h5>Eicher Motors Ltd</h5>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+
+          <div class="item ">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p> <p>Before implementing ProBuds &lsquo;eCompliance&rsquo; tool, we evaluated couple of similar solutions available in the market. ProBuds &lsquo;eCompliance&rsquo; tool faired best in most of the parameters. It is a cost effective, highly customizable, easy to use and a secure web solution. ProBuds team is highly efficient and their understanding of practical implication of laws is remarkable. As part of the AMC, ProBuds team regularly update us about statutory changes and update the tool before the effective date</p>
+</p>
+                  <h3>Mr. Atul Sharma - Senior Legal Counsel & Company Secretary</h3>
+                  <h5>Eicher Polaris Private Ltd</h5>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+
+
+        <!-- Quote 1 -->
+          
+
+        <!-- Quote 1 -->
+          
+
+        <!-- Quote 1 -->
+          
+
+        <!-- Quote 1 -->
+          
+
+
+
+        </div>
+
+        
+        <!-- Carousel Buttons Next/Prev -->
+
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+
+      </div>                          
+
+    </div>
+
+
+
+</div>
+
+</div>
+
+</section>
+<style>
+	.left i{color:#00008c;font-size:40px;}
+	.right i{color:#00008c;font-size:40px;}
+.left{        position: absolute;
+  
+    top: 32% !important;
+    z-index: 10007;}
+	
+	.right{    position: absolute;
+ 
+    top: 32% !important;
+    z-index: 10007;}
+    .left,
+    .right {
+        cursor: pointer;
+    }</style>
+
+
+<footer>
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+<h4> Quick Links </h4>
+</div>
+
+<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+<ul>
+  <li><a href="http://www.probuds.co/services/CompanyProfile/About Us">About Us <span> | </span></a></li>
+  <li><a href="http://www.probuds.co/services/ComplianceSolutio/Compliance%20&%20Risk%20Management">Compliance & Risk Management <span> | </span></a></li>
+  <li><a href="http://www.probuds.co/services/BusinessProcessImprovements/Consulting">Consulting <span> | </span></a></li>
+  <li><a href="http://www.probuds.co/services/complianceManagementSolution/CaseStudies">Case Studies <span> | </span></a></li>
+    <li><a href="http://www.probuds.co/client-profile"> Client Profile  </a></li>
+</ul>
+</div>
+<div class="col-md-12"></div>
+<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+<h4> Contact Us </h4>
+<!--<a href="contact-us" class="cont-se"> Contact Us </a>-->
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<ul>
+  <li><a href="mail:info@probuds.co"><i class="fa fa-envelope" aria-hidden="true"></i> info@probuds.co  </a></li>
+  <li><i class="fa fa-phone" aria-hidden="true"></i> +91-9818946669</li>
+  <li><a href="http://www.probuds.co/services/contactUs/About Us"> Contact Us  </a></li>
+  <li><a href="#"> Privacy Policy  </a></li>
+</ul>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<div class="iso-img">
+<img src="http://www.probuds.co/img/iso1.png" alt="" class="img-responsive" />
+<img src="http://www.probuds.co/img/iso2.png" alt="" class="img-responsive" />
+</div>
+</div>
+
+</div>
+</div>
+
+
+</footer>
+
+<section class=" subfooter">
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<p>   @probuds.co all right reserved</p>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right">
+                    <ul class="social-network social-circle">
+                        <li><a href="https://www.facebook.com/probuds.strategy" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/ProBudsStrategy"  target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/13282233/" class="icoLinkedIn" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                    </ul>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<script>
+$(document).ready(function() {
+  //Set the carousel options
+  $('#quote-carousel').carousel({
+    pause: true,
+    interval: 4000,
+  });
+});
+</script>
+
+
+
+</body>
